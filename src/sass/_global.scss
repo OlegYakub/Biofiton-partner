@@ -1,0 +1,134 @@
+*{padding: 0; margin: 0; outline: none}
+ul{list-style-type: none}
+a{text-decoration: none; -webkit-transition: .35s;
+-moz-transition: .35s;
+-ms-transition: .35s;
+-o-transition: .35s;
+transition: .35s;}
+button{
+	-webkit-transition: .35s;
+	-moz-transition: .35s;
+	-ms-transition: .35s;
+	-o-transition: .35s;
+	transition: .35s;
+}
+
+html, body{
+	font-family: $font-stack;
+	font-size: $primary-fz;
+	color: $primary-color;
+	line-height: $primary-l-heigth;
+}
+
+a{
+	color: $primary-color;
+}
+input{
+	background: none;
+
+}
+
+
+.container{
+	width: 100%;
+	max-width:  1170px;
+	margin: 0 auto;
+	position: relative;
+	&:after{
+			content: "";
+			clear: both;
+			display: block;
+		}
+}
+
+.btn{
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	width: 200px;
+	display: block;
+	border-radius: 50px;
+	padding: 10px 0 ;
+	background-color: #009247;
+	cursor: pointer;
+	&:hover{
+		background-color: #00b659;
+	}
+}
+
+.title{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #000 ;
+
+}
+
+/* ==========main-1============ */
+
+.main-1{
+	
+	&__body{
+		
+	}
+}
+
+
+/* ==========main-2============ */
+
+.main-2{
+	
+	&__body{
+		
+	}
+}
+
+/* ==========main-3============ */
+.main-3{
+	
+	&__body{
+		
+	}
+}
+
+
+
+/* ==================================responsive========================== */
+/* ==================================960========================== */
+/* ==================================================================== */
+@media screen and (max-width: 1170px){
+	.container{
+		max-width:  960px;
+		padding: 0 20px;
+	}
+}
+
+/* ==================================744========================== */
+
+@media screen and (max-width: 959px){
+	.container{
+		max-width:  743px;
+		padding: 0 20px;
+	}
+}
+
+/* ==================================320========================== */
+@media screen and (max-width: 743px){
+	.container{
+		max-width:  460px;
+		padding: 0 20px;
+	}
+
+	html, body{
+		font-size: $primary-fz-mob;
+		line-height: $primary-l-heigth-mob;
+	}
+
+	.btn{
+
+	}
+
+	.title{
+	
+	}
+}
