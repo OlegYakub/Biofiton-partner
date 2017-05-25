@@ -3,5 +3,58 @@ footer{
 }
 
 .footer{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	padding-bottom: 30px;
+	&__title{
+		font-size: 18px;
+		text-transform: uppercase;
+		padding-bottom: 35px;
+	}
+
+	&__item{
+		display: block;
+		padding-bottom: 7px;
 		
+		&:hover{
+			opacity: 0.6;
+		}
+	}
+
+	&__soc{
+		padding-right: 10px;
+
+		&:hover{
+			opacity: 0.65;
+		}
+	}
+
+	&__pays{
+		font-size: 0;
+		img{
+			padding-right: 4px;
+			padding-bottom: 4px;
+		}
+	}
+
+	&__right{
+		padding-right: 85px;
+		width: 120px;
+	}
+
+	&__useful{
+		width: 570px;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+	}
+
+	&__col{
+		padding-right: 30px;
+	}
 }

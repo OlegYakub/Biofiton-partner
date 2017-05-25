@@ -9,6 +9,7 @@ header{
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
 	justify-content: space-between;
+	padding-top: 35px;
 	
 }
 	
@@ -27,6 +28,28 @@ header{
 	}
 
 	&__link{
-		
+		padding-left: 30px;
+		font-weight: 400;
+		&:hover{
+			color: #ff4000;
+		}
 	}
+}
+
+/* ==================================responsive========================== */
+/* ==================================960========================== */
+/* ==================================================================== */
+@media screen and (max-width: 1170px){
+
+}
+
+/* ==================================744========================== */
+
+@media screen and (max-width: 959px){
+	
+}
+
+/* ==================================320========================== */
+@media screen and (max-width: 743px){
+	
 }
