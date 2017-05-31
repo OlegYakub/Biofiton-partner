@@ -58,3 +58,71 @@ footer{
 		padding-right: 30px;
 	}
 }
+
+/* ==================================responsive========================== */
+/* ==================================960========================== */
+/* ==================================================================== */
+@media screen and (max-width: 1170px){
+	
+	.footer{
+
+		&__useful{
+			width: 475px;
+		}
+
+		&__right{
+			padding-right: 25px;
+		}
+	}
+
+}
+
+/* ==================================744========================== */
+
+@media screen and (max-width: 959px){
+	.footer{
+
+		&__useful{
+			width: 410px;
+		}
+
+		&__right{
+			padding-right: 0;
+		}
+
+		&__col{
+			padding-right: 20px;
+		}
+	}
+}
+
+/* ==================================320========================== */
+@media screen and (max-width: 743px){
+	.footer{
+		display: block;
+
+		&__useful{
+			width: 100%;
+			-webkit-flex-wrap: wrap;
+			-moz-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			-o-flex-wrap: wrap;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+
+		&__title{
+			padding-bottom: 25px;
+		}
+
+		&__middle{
+			padding-bottom: 30px;
+		}
+
+		&__col{
+			padding-right: 40px;
+			width: 100px;
+			padding-bottom: 35px;
+		}
+	}
+}

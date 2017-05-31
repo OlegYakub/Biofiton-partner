@@ -36,6 +36,16 @@ header{
 	}
 }
 
+.burger{
+	display: none;
+}
+
+.burger-menu{
+	display: none;
+}
+
+
+
 /* ==================================responsive========================== */
 /* ==================================960========================== */
 /* ==================================================================== */
@@ -51,5 +61,130 @@ header{
 
 /* ==================================320========================== */
 @media screen and (max-width: 743px){
-	
+	.nav{
+		display: none;
+	}
+
+	.header{
+		padding-top: 10px;
+
+		&__wrapper{
+			position: relative;
+			z-index: 5;
+
+			&--active{
+				background-color: #fcfcd9;
+
+			}
+		}
+	}
+
+	.burger{
+		display: block;
+		width: 30px;
+		margin-top: 10px;
+		cursor: pointer;
+		&__line{
+			background-color: #00933f;
+			width: 100%;
+			height: 4px;
+			margin-bottom: 4px;
+			border-radius: 2px;
+		}
+	}
+
+	.burger-menu{
+		display: block;
+		position: absolute;
+		left: -9999px;
+		&__list{
+			padding-bottom: 60px;
+			padding-top: 10px;
+			display: -webkit-flex;
+			display: flex ;
+			-webkit-box-pack: justify;
+			-webkit-justify-content: center;
+			justify-content: center;
+			li{
+				font-size: 12px;
+				padding: 0 7px;
+			}
+		}
+
+		&__organ{
+			text-transform: uppercase;
+			text-align: center;
+			//line-height: 64px;
+			display: -webkit-flex;
+			-webkit-box-pack: justify;
+			-webkit-justify-content: center;
+			justify-content: center;
+			display: flex !important;
+			-webkit-align-items: center;
+			align-items: center;
+			color: #858585;
+			img{
+				display: inline;
+				padding-right: 30px;
+			}
+		}
+
+		&__organs{
+			padding-bottom: 15px;
+			
+			margin: 0 auto;
+			
+			width: 300px;
+			.slick-arrow{
+				background-repeat: no-repeat;
+				background-position: center;
+				z-index: 6;
+				&:before{
+					display: none;
+				}	
+			}
+
+			.slick-slide{
+				//width: 320px !important;
+			}
+
+			.slick-prev{
+				left: 0;
+				background-image: url("../img/left-arr.png");
+			}	
+
+			.slick-next{
+				right: 0; 
+				background-image: url("../img/right-arr.png");
+			}
+
+			.slick-disabled{
+				opacity: 0.5;
+			}
+		}
+
+		&__type{
+			text-align: center;
+			color: $light-color;
+
+			
+		}
+
+		&__types{
+			padding-bottom: 30px;
+			padding-top: 30px;
+			border-top: $bd;
+			.slick-center{
+				color: #646464;
+			}
+		}
+
+		&--dropped{
+			    background-color: #fcfcd9;
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: 65px;
+		}
+	}
 }
